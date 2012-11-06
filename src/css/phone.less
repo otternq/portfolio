@@ -1,0 +1,142 @@
+/****************
+ Color Variables
+****************/
+@primaryColor: #FFFFFF;
+@secondaryColor: #444444;
+@highlightColor: #59c5d9;
+@backgroundColor: #7c786a;
+
+/*****************
+ Position Variables
+*****************/
+@helloTop: 95px;
+
+@contentWidth: 98%;
+
+
+/*****************
+ Classes
+*****************/
+
+.absPos(@top: 0px, @left: 0px) {
+    position: absolute;
+    top: @top;
+    left: @left;
+}
+
+.fadeIn {
+    /*display:none;*/
+}
+
+.pushRight(@right: 10px) {
+    padding-left: @right;
+    padding-right: @right;
+}
+
+.pushDown(@down: 25px) {
+    margin-top: @down;
+}
+
+.colorBars {
+    border-top: solid 30px @highlightColor;
+    border-bottom: solid 10px @highlightColor;
+}
+
+
+/**************
+ CSS RULES
+**************/
+
+BODY {
+    font-family: arial;
+    
+    margin:0px;
+    background-color: @backgroundColor;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    &:visited{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}
+
+#top {
+    .colorBars;
+    width: 100%;
+    height: auto;
+}
+
+#hello {
+    .pushDown;
+    .pushRight;
+    margin-bottom: 15px;
+    
+    color: @primaryColor;
+    font-size: 28pt;
+    
+    width: @contentWidth;
+    
+    line-height: .85em;
+}
+
+#name {
+    color: @highlightColor;
+}
+
+#jobTitle {
+    color: @secondaryColor;
+    font-size: 20pt;
+}
+
+#about {
+    .fadeIn;
+    .pushDown;
+    .pushRight;
+    
+    width: @contentWidth;
+    
+    color: @secondaryColor;
+    
+    div:first-child {
+        width: @contentWidth;
+        
+        margin: 0px;
+        padding-bottom: 5px;
+        
+        font-size: 25px;
+    }
+    
+}
+
+#menu {
+    .fadeIn;
+    .pushDown;
+    .pushRight;
+    
+    width: @contentWidth;
+    
+    color: @primaryColor;
+    font-size: 20pt;
+
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        
+        li {
+            float:left;
+            padding-right: 15px;
+        }
+        
+        &:last-child { padding-right: 0px; }
+        
+    }
+}
+
+#about-more,
+#rightColumn {
+    display: none;
+}
