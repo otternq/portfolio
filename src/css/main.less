@@ -1,0 +1,215 @@
+/****************
+ Color Variables
+****************/
+@primaryColor: #FFFFFF;
+@secondaryColor: #444444;
+@highlightColor: #59c5d9;
+@backgroundColor: #7c786a;
+
+/*****************
+ Position Variables
+*****************/
+@helloTop: 95px;
+
+@contentWidth: 455px;
+
+
+/*****************
+ Classes
+*****************/
+
+.absPos(@top: 0px, @left: 0px) {
+    position: absolute;
+    top: @top;
+    left: @left;
+}
+
+.fadeIn {
+    display:none;
+}
+
+.pushRight(@right: 75px) {
+    margin-left: @right;
+}
+
+.pushDown(@down: 25px) {
+    margin-top: @down;
+}
+
+.colorBars {
+    border-top: solid 10px @highlightColor;
+    border-bottom: solid 10px @highlightColor;
+}
+
+
+/**************
+ CSS RULES
+**************/
+
+BODY {
+    font-family: arial;
+    
+    margin:0px;
+    background-color: @backgroundColor;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    &:visited{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}
+
+#top {
+    border-top: solid 10px @highlightColor;
+    width: 100%;
+    height: auto;
+}
+
+#hello {
+    margin-top: @helloTop;
+    margin-bottom: 15px;
+    
+    .pushRight;
+    
+    color: @primaryColor;
+    font-size: 46pt;
+    
+    width: @contentWidth;
+    
+    line-height: .85em;
+}
+
+#name {
+    color: @highlightColor;
+}
+
+#jobTitle {
+    color: @secondaryColor;
+    font-size: 30pt;
+}
+
+#about {
+    /*.fadeIn;*/
+    .pushRight;
+    .pushDown;
+    
+    width: @contentWidth;
+    
+    color: @secondaryColor;
+    
+    div:first-child {
+        width: @contentWidth;
+        /*height: 205px;*/
+        /*overflow: hidden;*/
+        
+        margin: 0px;
+        padding-bottom: 5px;
+        
+        font-size: 25px;
+    }
+    
+}
+
+#menu {
+    /*.fadeIn;*/
+    .pushRight;
+    .pushDown;
+    
+    color: @primaryColor;
+    font-size: 30pt;
+    
+    height: 50px;
+    padding-bottom: 15px;
+
+    ul {
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        
+        li {
+            float:left;
+            padding-right: 30px;
+            
+            img {
+                height: 50px;
+            }
+        }
+        
+        &:last-child { padding-right: 0px; }
+        
+    }
+}
+
+#container {
+    position: relative;
+    width: 99%;
+}
+
+#content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+}
+
+#services {
+    padding-top: 15px;
+
+    .pushRight;
+    
+    border-top: solid 10px @highlightColor;
+    
+    ul {
+        padding: 0px;
+        margin: 0px;
+        
+        li {
+            float: left;
+            list-style: none;
+            
+            /*a {
+                text-decoration: underline;
+            }*/
+            
+            border-right: solid 1px black;
+            
+            padding-right: 20px;
+            padding-left: 20px;
+            
+        }
+        
+        li:first-child {
+            padding-left: 0px;
+        }
+        
+        li:last-child {
+            border-right: none;
+            padding-right: 0px;
+        }
+        
+    }
+    
+}
+
+#rightColumn {
+    position: absolute;
+    top: 0px;
+    left: 550px;
+    
+    /*.fadeIn;*/
+    z-index:3;
+    
+    .pushDown;
+    
+    font-size: 25px;
+    
+    width: 200px;
+    
+    img {
+        margin-bottom: 10px;
+        width: 150px;
+    }
+}

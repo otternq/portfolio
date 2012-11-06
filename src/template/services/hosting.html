@@ -1,0 +1,112 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- about the site -->
+        
+                
+        <meta name="description" content="Requeset information regarding Web Hosting services" />
+        
+                
+        <meta name="author" content="Nick Otter" />
+        
+        <!-- do not allow devices to scale (zoom) - that means the phone css must be very readable -->
+        <meta name="viewport"  content="width=device-width,  minimum-scale=1.0, maximum-scale=1.0" />
+
+        <!-- specify content type -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        
+        <!-- load the custom css style -->
+        <link type="text/css" rel="stylesheet/less" media="screen" href="/css/secondary.less" />
+        <link type="text/css" rel="stylesheet/less" media="screen and (max-device-width: 325px)" href="/phone.less" />
+        <link type="text/css" rel="stylesheet/css" media="print" href="/print.css" />
+        <!-- less library -->
+        <script src="//nickotter.com/less.js" type="text/javascript"></script>
+        
+        <!-- jQuery Libraries -->
+        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>-->
+        <script src="/jquery-1.7.2.min.js" type="text/javascript" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js" type="text/javascript"></script>
+        
+        <!-- Custom Javascript Code -->
+        <!--<script src="//nickotter.com/main.js" type="text/javascript"></script>-->
+        
+                
+        <title>Nick Otter | Services | Web Hosting</title>
+        
+                
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-32686390-1']);
+          _gaq.push(['_setDomainName', 'nickotter.com']);
+          _gaq.push(['_trackPageview']);
+        
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        
+        </script>
+    </head>
+    <body>
+        
+        <div id="top">
+            <div id="hello">
+                <span id="name">Nick.</span>
+               <span id="jobTitle">The web developer</span>
+            </div><!-- end #hello -->
+        </div><!-- end #top -->
+        <div id="container">
+            <div id="content">
+
+
+                <div id="about" class="fadeIn">
+                    <div>
+                    <h2>Web Hosting</h2>
+                    
+                    <form action="/services/hosting" method="post">
+                        <!--[if IE]>
+                        <label for="name">Name: </label>
+                        <![endif]-->
+                        <input type="text" id="name" name="name" placeholder="Your Name" size="32" /><br />
+                        
+                        <!--[if IE]>
+                        <label for="email" style="margin-right: 3px;">Email: </label>
+                        <![endif]-->
+                        <input type="email" id="email" name="email" placeholder="Email" size="32" />
+                        
+                        <p><label for="details" title="Whats your project for, what do you want done now, what do you want in the future. Have you already writen the content for your website?">Tell me about your project</label></p>
+                        <textarea id="details" name="description" cols="45" rows="15"></textarea>
+                        
+                        <br /><br />
+                        <input type="hidden" name="submitted" value="submitted" />
+                        <input type="hidden" name="service" value="hosting" />
+                        <input type="submit" name="submit" value="Lets get started" />
+                        <br /><br />
+                    </form>
+                    
+                    </div>
+                </div><!-- end #about -->
+
+                
+                <div id="services" class="fadeIn">
+                    <ul>
+                        <li>
+                            <a href="/">About</a>
+                        </li>
+                        <li>
+                            <a href="/services/hosting/">Web Hosting</a>
+                        </li>
+                        <li>
+                            <a href="/services/development/">Web Development</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- end #container -->
+        
+    </body>
+</html>
