@@ -29,6 +29,7 @@
 }
 
 .pushRight(@right: 10px) {
+    margin-left: @right;
     padding-left: @right;
     padding-right: @right;
 }
@@ -134,6 +135,19 @@ a {
         &:last-child { padding-right: 0px; }
         
     }
+}
+
+#services {
+    padding-top: 15px;
+    margin-left: 0px;
+    
+    width: 100%;
+    
+    ul {
+        .pushRight;    
+    }
+    
+    border-top: solid 10px @highlightColor;
 }
 
 #about-more,
