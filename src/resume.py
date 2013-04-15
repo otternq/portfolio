@@ -20,7 +20,7 @@ class ProductImage:
         self.url = url
 
 
-class MainPage(webapp2.RequestHandler):
+class ResumePage(webapp2.RequestHandler):
     
     def get(self):
 
@@ -38,9 +38,9 @@ class MainPage(webapp2.RequestHandler):
             #]
         }
 
-        template = jinja_environment.get_template('./template/index.html')
+        template = jinja_environment.get_template('./template/resume.html')
         self.response.out.write(template.render(template_values))
 
 
-app = webapp2.WSGIApplication([('/', MainPage)],
+app = webapp2.WSGIApplication([('/resume/', ResumePage)],
                               debug=True)

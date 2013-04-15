@@ -17,6 +17,9 @@ handlers:
 - url: /services/.*
   script: services.app
   
+- url: /resume/
+  script: resume.app
+
 - url: /.*
   script: index.app
   
