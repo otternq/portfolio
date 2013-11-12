@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>KickShot - Design Review</title>
+
+    <link rel="stylesheet" href="/css/reveal-css/reveal.min.css">
+    <link rel="stylesheet" href="/css/reveal-css/theme/moon.css" id="theme">
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+
+        <section>
+          <h2>KickShot for Android</h2>
+          <p>Design Review</p>
+
+          <br /><br />
+          <p>Nick Otter and Jordan Leithart</p>
+        </section>
+
+        <section>
+          <h2>Background</h2>
+          <p>
+            <ul>
+              <li>Aziz and KickShot</li>
+              <li>Previous Iteration</li>
+              <li>Whats different this semester</li>
+            </ul>
+          </p>
+        </section>
+
+        <section>
+          <h2>Current State</h2>
+          <p>What have we accomplished so far?</p>
+          <ul>
+            <li>Working game</li>
+            <li>Up on Google Play Store as Beta</li>
+            <li>Prototype Leaderboard</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How did we get here</h2>
+          <ul>
+            <li>Some prototypes not related to KickShot</li>
+            <li>Iterative development</li>
+            <li>Hardest problem first</li>
+            <li>Communication with <a target="_blank" href="//github.com/redcarddev/">GitHub</a></li>
+          </ul>
+
+        </section>
+
+        <section>
+
+          <h2>Testing Plan</h2>
+          <ul>
+            <li>Android JUnit / Robolectric</li>
+            <li>Pass game environment</li>
+            <li>Mock Random object</li>
+          </ul>
+
+        </section>
+
+        <section>
+          <section>
+            <h2>Major issues we've had</h2>
+          </section>
+
+          <section>
+            <h2>Started with incorrect rule set</h2>
+            <p>
+              Communication with client fixed problem quickly
+            </p>
+          </section>
+
+          <section>
+            <h2>Game moving too fast to recognize</h2>
+            <p>
+              Fixed with non-blocking threads
+            </p>
+          </section>
+
+          <section>
+            <h2>Issues with Eclipse</h2>
+            
+            <ul>
+              <li>Wouldn't work with Git effectively.</li>
+              <li>Switched to Gridle and Android Studio</li>
+            </ul>
+          </section>
+
+        </section>
+
+        <section>
+          <h2>Future Plans</h2>
+          <ul>
+            <li>Better in game documentation</li>
+            <li>Lots of improvements for the Rules page</li>
+            <li>Intro page also needs re-done</li>
+            <li>Leaderboard</li>
+            <li>Achievements</li>
+            <li>Track Win/Loss record</li>
+          </ul>
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="/javascript/reveal-js/reveal.min.js"></script>
+
+    <script>
+
+      Reveal.initialize();
+
+    </script>
+
+  </body>
+</html>

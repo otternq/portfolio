@@ -16,4 +16,24 @@ class MyApp < Sinatra::Base
 
         erb :'index.html'
     end
+
+    get '/presentations/?' do
+        @name = "Nick Otter"
+        @title = "Developer"
+
+        erb: 'index.html'
+    end
+
+    get '/presentations/:pres' do
+        @name = "Nick Otter"
+        @title = "Developer"
+
+        if params[:pres] then
+            erb :'kickshot-design-review.html'
+        else
+            erb :'index.html'
+        end
+
+        
+    end
 end
