@@ -11,7 +11,7 @@ class MyApp < Sinatra::Base
 
     get '/' do
 
-        @name = "Nick Otter"
+        @name = "Nick"
         @title = "Developer"
 
         erb :'index.html'
@@ -21,17 +21,17 @@ class MyApp < Sinatra::Base
         @name = "Nick Otter"
         @title = "Developer"
 
-        erb: 'index.html'
+        erb :'presentation.html'
     end
 
     get '/presentations/:pres' do
         @name = "Nick Otter"
         @title = "Developer"
 
-        if params[:pres] then
+        if params[:pres] == "kickshot-design-review" then
             erb :'kickshot-design-review.html'
         else
-            erb :'index.html'
+            erb :'presentation.html'
         end
 
         
