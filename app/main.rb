@@ -30,6 +30,8 @@ class MyApp < Sinatra::Base
 
         if params[:pres] == "kickshot-design-review" then
             erb :'kickshot-design-review.html'
+        elsif params[:pres] == "kickshot-final" then
+            erb :'kickshot-final.html'
         else
             erb :'presentation.html'
         end
