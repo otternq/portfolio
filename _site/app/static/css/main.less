@@ -1,0 +1,93 @@
+/****************
+ Color Variables
+****************/
+@primaryColor: #FFFFFF;
+@secondaryColor: #444444;
+@highlightColor: #59c5d9;
+@backgroundColor: #7c786a;
+
+
+
+
+
+/*****************
+ Classes
+*****************/
+
+.colorBars {
+    width: 100%;
+    border-top: solid 10px @highlightColor;
+}
+
+
+/**************
+ CSS RULES
+**************/
+
+BODY {
+    font-family: arial;
+    
+    margin:0px;
+    background-color: @backgroundColor;
+}
+
+a {
+    color: #FFFFFF;
+    &:visited{
+        color: #FFFFFF;
+    }
+}
+
+.intro {
+    color: @primaryColor;
+    font-size: 46pt;
+
+    .jobTitle {
+        font-size: 30pt;
+    }
+    
+    line-height: .85em;
+}
+
+.intro-secondary {
+
+    font-size: 24pt;
+    vertical-align: center;
+}
+
+
+
+.about {
+    
+    color: @secondaryColor;
+        
+    font-size: 25px;
+
+    a {
+        text-decoration:underline;
+    }
+    
+}
+
+.name {
+    color: @highlightColor;
+}
+
+.jobTitle {
+    color: @secondaryColor;
+}
+
+.menu-bottom {
+
+    a {
+        font-face: "Trebuchet MS", Helvetica, sans-serif;
+        font-weight:900;
+        font-size: 30pt;
+        color: black;
+    }
+
+    img {
+        height: 50px;
+    }
+}
+

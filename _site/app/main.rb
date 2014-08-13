@@ -1,7 +1,13 @@
 require 'sinatra'
 require 'json'
 
+set :public_dir, File.dirname(__FILE__) + '/static'
+
 class MyApp < Sinatra::Base
+
+    set :app_file, __FILE__ 
+    set :root, File.dirname( __FILE__ ) 
+    set :public_dir, File.dirname( __FILE__ ) + '/static' 
 
     get '/' do
 
@@ -30,25 +36,6 @@ class MyApp < Sinatra::Base
             erb :'presentation.html'
         end
 
-
-    end
-
-    get '/boom' do
-      content_type :json
-      '{
-        "lists": [
-          {
-            "url": [
-              {
-                "github": "http://github.com/otternq"
-              },
-              {
-                "portfolio": "http://nickotter.com"
-              }
-            ]
-          }
-        ]
-      }'
-
+        
     end
 end
