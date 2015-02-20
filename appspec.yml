@@ -1,0 +1,3 @@
+files:
+  - source: .
+    destination: /var/www/vhost/portfolio
